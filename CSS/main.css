@@ -1,0 +1,279 @@
+
+html {
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --section-space: 60px;
+    --main-color: #6B350E;
+}
+body {
+    margin: 0;  
+    font-family: "Nunito", sans-serif;
+    font-size: 22px;
+    overflow-x: hidden;
+}
+header {
+    background: linear-gradient(180deg,rgba(74, 36, 9, 1),transparent), url(../img/header-photo.jpg) center / cover no-repeat;
+}
+.logo img {
+    display: block;
+}    
+.logo {
+    margin-top: 18px;
+    
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.header p {
+    text-align: center;
+    padding: 25% 10%;
+    font-weight: 900;
+    font-size: 40px;
+    color: #ffffff;
+}
+section {
+    margin-bottom: var(--section-space);
+}
+.shop-info {
+    margin-top: var(--section-space);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--main-color);
+   
+}
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+.shop-info p {
+    font-size: 20px;
+    font-weight: 600;
+}
+.shop-info h3 {
+    font-size: 31px;
+    font-weight: 600;
+}
+main {
+    max-width: 1052px;
+    margin: 0 auto;
+
+}
+h2 {
+    font-size: 29px;
+    font-weight: 700;
+}
+section {
+    max-width: auto;
+}
+.baristas img,
+.atmosphere img,
+.beans img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.section-text {
+    margin: auto 0;
+    color: var(--main-color);
+}
+.shop-sign {
+    display: flex;
+    justify-content: center;
+}
+.menu-item {
+    position: relative;
+}
+.menu-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.menu-item p {
+    font-size: 36px;
+    font-weight: 900;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.menu {
+    margin: var(--section-space) auto;
+}
+
+.footer {
+    border-top: solid 2px rgba(107, 53, 14, .4);
+    color: var(--main-color);
+    padding-top: 40px;
+    padding-bottom: 18px;
+}
+.social {
+    margin-top: 44px;
+    margin-bottom: 32px;
+}
+.social ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+.social img {
+    display: block;
+    width: 38px;
+    height: auto;
+}
+.social a {
+    display: block;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+.about-us ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+.about-us li {
+    text-align: center;
+}
+.address {
+    font-weight: 900;
+}
+
+@media (min-width: 850px) {
+    :root {
+        --section-space: 80px;
+    }
+    body {
+        background-color: #35667C;
+    }
+    .container {
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 40px;
+    }
+    nav ul {
+        display: flex;
+        gap: 30px;                        
+    }
+    .header p {
+        font-size: 47px;
+        padding: 15% 5%;
+    }
+    .shop-info p,
+    .about-us li {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    .baristas img,
+    .atmosphere img,
+    .beans img {
+        max-width: 390px;
+    }
+    .baristas,
+    .atmosphere,
+    .beans {
+        display: flex;
+        gap: 50px;
+    }
+    .atmosphere {
+        flex-direction: row-reverse;
+    }
+    .menu {
+        margin: var(--section-space) auto;
+        display: flex;
+        gap: 50px;
+        
+    }
+    
+    .footer {
+        padding-bottom: 30px;
+    }
+    .about-us ul {
+        flex-direction: row;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .about-us li {
+        width:33.33%;
+    }
+    .phone {
+        order: -1;
+    }
+    .social {
+        margin: 30px auto;
+    }
+    
+}
+@media (max-width :850px) {
+    nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    }
+    nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .baristas,
+    .atmosphere,
+    .beans {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    main,
+    .shop-info {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
